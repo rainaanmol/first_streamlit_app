@@ -22,7 +22,7 @@ streamlit.dataframe(my_fruit_list)
 #display on the page
 ##streamlit.dataframe(fruits_show)
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
 
 streamlit.text(fruityvice_response.json())
 
