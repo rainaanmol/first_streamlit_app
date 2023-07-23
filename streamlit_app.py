@@ -22,13 +22,13 @@ streamlit.dataframe(my_fruit_list)
 #display on the page
 ##streamlit.dataframe(fruits_show)
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi)
 
 streamlit.text(fruityvice_response.json())
 
-# write your own comment -what does the next line do? 
+# write your own comment -what does the next line do? -- added the columns of the table
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
+# write your own comment - what does this do? -- shows the result of the fruit selected
 streamlit.dataframe(fruityvice_normalized)
 
 
