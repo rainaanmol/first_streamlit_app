@@ -20,3 +20,8 @@ fruits_show = my_fruit_list.loc[fruits_selected]
 
 #display on the page
 streamlit.dataframe(fruits_show)
+
+
+import pandas 
+fuityvice_response = requests.get("https://fyuityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
