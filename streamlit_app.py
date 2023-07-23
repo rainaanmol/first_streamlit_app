@@ -22,6 +22,4 @@ my_fruit_list = my_fruit_list.set_index("Fruit")
 ##streamlit.dataframe(fruits_show)
 
 
-import requests 
-fuityvice_response = requests.get("https://fyuityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+
